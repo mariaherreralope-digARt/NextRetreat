@@ -23,10 +23,10 @@ const NavLinks = ({ navLinks, activeLink, setActiveLink, onClick }: NavLinksProp
           setActiveLink(link.href);
           if (onClick) onClick();
         }}
-        className={`block text-sm font-medium font-body py-2 ${
+        className={`block font-medium font-body sm:text-sm md:text-md py-2 ${
           activeLink === link.href
-            ? "text-#b95755 hover:#869c84"
-            : "text-#869c84 hover:#869c84"
+            ? "text-btt hover:text-btt/30"
+            : "text-darker hover:text-darker/70"
         }`}
       >
         {link.label}

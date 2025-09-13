@@ -1,10 +1,111 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import "tailwindcss";
 /* Optional custom styles */
-body {
+/* body {
   font-family: 'Inter', sans-serif;
+} */
+
+@theme {
+
+  --color-dark: #6d8b74;
+  --color-darker: #5f7161;
+  --color-accent: #f7f3f0;
+  --color-btt: #6d152b;
+  --color-light: #d0c9c0;
+  --color-lighter: #efead8;
+
+  --font-body: "Inter", "sans-serif";
+  --font-heading: "Satoshi", "sans-serif";
+  /* --font-subheading: "Playfair Display", "sans-serif"; */
+
+  /* @layer base {
+    body {
+      background-color: var(--color-background);
+      color: var(--color-secondary);
+      font-family: var(--font-body);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--color-primary);
+    }
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .font-body {
+      font-family: var(--font-body);
+    }
+    .font-heading {
+      font-family: var(--font-heading);
+    }
+    .font-subheading {
+      font-family: var(--font-subheading);
+    }
+    .text-primary {
+      color: var(--color-primary);
+    }
+    .text-secondary {
+      color: var(--color-secondary);
+    }
+    .text-accent {
+      color: var(--color-accent);
+    }
+    .text-btt {
+      color: var(--color-btt);
+    }
+    .bg-primary {
+      background-color: var(--color-primary);
+    }
+    .bg-secondary {
+      background-color: var(--color-secondary);
+    }
+    .bg-accent {
+      background-color: var(--color-accent);
+    }
+    .bg-btt {
+      background-color: var(--color-btt);
+      @apply text-black hover:text-white;
+    }
+    
+  } */
+
+  /* @layer components {
+    .btn {
+      @apply px-4 py-2 rounded-md font-semibold transition-colors duration-300;
+    }
+    .btn-primary {
+      @apply bg-primary text-white hover:bg-opacity-90;
+    }
+    .btn-secondary {
+      @apply bg-secondary text-black hover:bg-opacity-90;
+    }
+    .btn-accent {
+      @apply bg-accent text-black hover:bg-opacity-90;
+    }
+    .btn-btt {
+      @apply bg-btt text-black hover:text-white;
+    }
+  } */
+
+
+  /* --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1); */
+  /* ... */
 }

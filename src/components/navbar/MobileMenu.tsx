@@ -36,10 +36,10 @@ const MobileMenu = ({
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -10 }}
         transition={{ duration: 0.5 }}
-        className="fixed inset-0 bg-[url('/bkgMenu.png')] bg-cover bg-center border-t h-screen border-gray-100 py-28 z-10"
+        className="fixed inset-0 bg-[url('/images/bkgMenu.png')] bg-cover bg-center border-t h-screen border-light py-28 z-10"
       >
         {/* overlay */}
-        <div className="absolute inset-0 bg-white/85 z-0" />
+        <div className="absolute inset-0 bg-lighter/85 z-0" />
 
         <motion.div
           className="relative container text-center mx-auto px-6 space-y-3 z-10"

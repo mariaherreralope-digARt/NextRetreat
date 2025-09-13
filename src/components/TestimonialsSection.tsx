@@ -41,11 +41,11 @@ const TestimonialsSection: FC = () => {
       className="py-16 px-14  inset-0 z-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent max-w-7xl mx-auto "
     >
       <motion.div className="text-center mb-12">
-        <motion.h2 className="text-2xl text-primary md:text-3xl font-heading mb-0">
+        <motion.h2 className="text-2xl text-lighter md:text-3xl font-heading mb-0">
           What They Say
         </motion.h2>
         <motion.p className="text-lg text-btt font-body italic mb-4">
-          nspiring words from those who transformed with us.
+          Inspiring words from those who transformed with us.
         </motion.p>
       </motion.div>
       <div className="relative">
@@ -58,8 +58,8 @@ const TestimonialsSection: FC = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-white p-8 rounded-lg shadow-md text-center max-w-2xl mx-auto relative z-0">
-                <p className="text-gray-700 mb-4 font-body text-sm md:text-md leading-relaxed">
+              <div className="bg-white/20 p-8 rounded-lg shadow-md text-center max-w-2xl mx-auto relative z-0">
+                <p className="text-light mb-4 font-body text-sm md:text-md leading-relaxed">
                   "{testimonial.text}"
                 </p>
                 <h4 className="text-primary font-heading">{testimonial.name}</h4>
@@ -67,10 +67,10 @@ const TestimonialsSection: FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-btt-dark shadow-md z-10">
+        <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
           <BsChevronLeft className="size-5" />
         </div>
-        <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-btt-dark shadow-md z-10">
+        <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
           <BsChevronRight className="size-5" />
         </div>
       </div>

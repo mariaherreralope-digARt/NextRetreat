@@ -28,14 +28,14 @@ const GlobalModal = () => {
               stiffness: 200,
               duration: 0.8,
             }}
-            className="bg-white dark:bg-secondary/50 shadow-xl w-full max-w-md p-6"
+            className="bg-white dark:bg-darker/50 shadow-xl w-full max-w-md p-6"
           >
             <div className="flex justify-between items-center mb-4">
-              <h1 className="text-xl font-heading text-gray-600 dark:text-gray-100">
+              <h1 className="text-xl font-heading text-dark dark:text-light">
                 Contacta con Nosotros
               </h1>
               <button onClick={closeModal} aria-label="Close contact form">
-                <FiX className="w-6 h-6 text-gray-00 dark:text-gray-100" />
+                <FiX className="w-6 h-6 text-gray-00 dark:text-light" />
               </button>
             </div>
 
@@ -56,7 +56,7 @@ const GlobalModal = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-body font-medium text-gray-800 dark:text-gray-100 mb-1"
+                  className="block text-sm font-body font-medium text-darker dark:text-gray-100 mb-1"
                 >
                   Nombre
                 </label>
@@ -64,7 +64,7 @@ const GlobalModal = () => {
                   type="text"
                   id="name"
                   placeholder="Tu Nombre"
-                  className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-secondary focus:border-secondary bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                  className="w-full px-4 py-2 border border-dark rounded-lg focus:ring-secondary focus:border-darker bg-light dark:bg-slate-700 text-slate-800 dark:text-gray-100"
                 />
               </div>
               <div>

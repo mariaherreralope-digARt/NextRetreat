@@ -21,9 +21,9 @@ const Cursos = () => {
 
   return (
     <section id="cursos" className="max-w-7xl mx-auto px-14 py-16 bg-cover bg-center relative opacity-90">
-      <div className="text-center mb-16 text-slate-300
+      <div className="text-center mb-16
        drop-shadow-md">
-        <h2 className="text-2xl text-primary md:text-3xl font-heading">The Retreat Collection</h2>
+        <h2 className="text-2xl text-lighter md:text-3xl font-heading">The Retreat Collection</h2>
         <p className="text-lg text-btt font-body mt-4 italic">
           Discover immersive programs crafted for mind, body, and soul.
         </p>
@@ -68,7 +68,7 @@ const Cursos = () => {
             </motion.div>
             {/* Title */}
             <motion.h3
-              className="text-2xl font-medium font-heading mb-3 relative z-10 text-primary drop-shadow-md"
+              className="text-2xl font-medium font-heading mb-3 relative z-10 text-darker drop-shadow-md"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.15 + 0.3 }}
@@ -77,7 +77,7 @@ const Cursos = () => {
             </motion.h3>
             {/* Description */}
             <motion.p
-              className="text-slate-500
+              className="text-darker
                font-body text-center relative z-10 drop-shadow-md max-w-3xl mx-auto text-sm md:text-md leading-relaxed mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}

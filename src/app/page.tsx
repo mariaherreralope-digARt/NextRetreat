@@ -2,6 +2,9 @@
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Cursos from "@/components/Cursos";
+import StrategyOverview from "@/components/StrategyOverview";
+import SocialMediaPlan from "@/components/SocialMediaPlan";
+import EngagementAnalytics from "@/components/EngagementAnalytics";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
@@ -14,8 +17,12 @@ export default function HomePage() {
 
       <div className="overflow-hidden">
         <Hero />
-        <AboutMe />
-        <Cursos />
+        {/* <AboutMe /> */}
+        {/* <Cursos /> */}
+        <StrategyOverview />
+        <EngagementAnalytics />
+
+        <SocialMediaPlan />
         <TestimonialsSection />
         <Newsletter />
         <Footer />

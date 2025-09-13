@@ -13,10 +13,10 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
 
   // base button style (border + text)
   const baseClass = isMenuOpen
-    ? "bg-[#b95755] text-white"
+    ? "bg-btt text-light"
     : scrolled
-      ? "bg-transparent text-[#b95755] border border-[#b95755]"
-      : "bg-white text-[#b95755]";
+      ? "bg-transparent text-btt border border-btt"
+      : "bg-light text-btt";
 
   return (
     <div className="flex-1 flex justify-end z-30">
@@ -26,14 +26,14 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
         animate={{ opacity: 1, scale: 1 }}
         whileHover="hover"
         variants={{}}
-        className={`relative overflow-hidden text-sm px-6 py-2.5 group font-light uppercase transition-colors duration-300 ${baseClass}`}
+        className={`relative overflow-hidden text-sm px-6 py-2.5 group uppercase transition-colors duration-300 ${baseClass}`}
       >
         {/* background animation layer */}
         <motion.span
           className={`absolute inset-0 ${
             isMenuOpen
-              ? "bg-white"
-              : "bg-[#b95755]"
+              ? "bg-light"
+              : "bg-btt"
           }`}
           initial={isMenuOpen ? { x: "100%" } : { x: "-100%" }}
           variants={{
@@ -46,12 +46,12 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
 
         {/* button text */}
         <span
-          className={`relative z-10 transition-colors duration-300 ${
+          className={`relative z-10 transition-colors duration-300 text-bold ${
             isMenuOpen
-              ? "text-white group-hover:text-[#b95755]"
+              ? "text-bold group-hover:text-btt"
               : scrolled
-                ? "text-[#b95755] group-hover:text-white"
-                : "text-black group-hover:text-white"
+                ? "text-btt group-hover:text-light"
+                : "text-darker text-bold group-hover:text-light"
           }`}
         >
           Contact

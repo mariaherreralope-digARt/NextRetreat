@@ -16,13 +16,13 @@ const NavMenuButton = ({ isMenuOpen, setIsMenuOpen, scrolled }: NavMenuButtonPro
       aria-label="Toggle menu"
     >
       {isMenuOpen ? (
-        <HiX className="w-8 h-8 bg-[#b95755] text-white rounded-full p-2 transition duration-300 hover:bg-white hover:border hover:border-[#b95755] hover:text-[#b95755]" />
+        <HiX className="w-8 h-8 bg-btt text-light rounded-full p-2 transition duration-300 hover:bg-light hover:border hover:border-btt hover:text-btt" />
       ) : (
         <HiMenu
           className={`w-8 h-8 rounded-full p-2 transition duration-300 ${
             scrolled
-              ? "bg-transparent border border-[#b95755] text-[#b95755] hover:bg-[#b95755] hover:text-white"
-              : "bg-white text-slate-500 hover:bg-[#b95755] hover:text-white"
+              ? "bg-transparent border border-btt text-btt hover:bg-btt hover:text-lighter"
+              : "bg-lighter text-darker hover:bg-btt hover:text-lighter"
           }`}
         />
       )}

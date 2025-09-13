@@ -4,8 +4,8 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export default function Newsletter() {
   return (
-    <section className="mx-auto bg-gradient-to-b from-[#869c84]/90 via-[#869c84]/20 to-transparent px-4 sm:px-6 lg:px-8 py-5">
-      <div className="bg-gradient-to-r from-[#b95755] via-[#869c84] to-secondary overflow-hidden">
+    <section className="mx-auto bg-gradient-to-b from-darker/90 via-dark/20 to-transparent px-4 sm:px-6 lg:px-8 py-5">
+      <div className="bg-gradient-to-r from-btt via-dark to-light overflow-hidden">
         <div className="relative md:px-16 py-16 px-6 md:py-15">
           <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             {/* Left content */}
@@ -13,7 +13,7 @@ export default function Newsletter() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-4 font-heading">
                 Stay Inspired, Stay Connected
               </h2>
-              <p className="text-red-100 text-sm font-body sm:text-base">
+              <p className="text-light text-sm font-body sm:text-base">
                 Join our exclusive community and receive curated insights,
                 retreat updates, and inspiration delivered directly to your
                 inbox.
@@ -24,9 +24,9 @@ export default function Newsletter() {
               <input
                 type="email"
                 placeholder="Tu dirección de correo"
-                className="w-full bg-white sm:w-auto md:w-80 px-4 sm:px-6 py-3 sm:py-4 focus:outline-none"
+                className="w-full bg-white text-darker sm:w-auto md:w-80 px-4 sm:px-6 py-3 sm:py-4 focus:outline-none"
               />
-              <button className="w-full sm:w-auto cursor-pointer bg-[#b95755] text-white px-6 hover:border hover:border-[#b95755] hover:bg-white hover:text-[#b95755] ]sm:px-8 py-3 sm:py-4 flex items-center gap-2 font-body">
+              <button className="w-full sm:w-auto cursor-pointer bg-btt text-white px-6 hover:border hover:border-btt hover:bg-white hover:text-btt ]sm:px-8 py-3 sm:py-4 flex items-center gap-2 font-body">
                 <span>Connect</span>
                 <HiArrowRight className="size-5" />
               </button>

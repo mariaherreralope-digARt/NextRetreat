@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
+      <body className="bg-lighter text-dark dark:bg-darker dark:text-lighter">
         <ModalProvider>
         <Navbar />
           {children}

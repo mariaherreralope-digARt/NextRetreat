@@ -16,7 +16,7 @@ const AboutMe: FC = () => {
           transition={{ duration: 1, staggerChildren: 0.2 }}
         >
           <motion.h2
-            className="text-2xl text-primary md:text-3xl font-heading mb-0"
+            className="text-2xl text-lighter md:text-3xl font-heading mb-0"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -34,7 +34,7 @@ const AboutMe: FC = () => {
             Our Philosophy
           </motion.h3>
           <motion.p
-            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-slate-500 mb-6"
+            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-light mb-6"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -45,7 +45,7 @@ const AboutMe: FC = () => {
 
           </motion.p>
           <motion.p
-            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-slate-500 mb-6"
+            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-light mb-6"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -55,7 +55,7 @@ const AboutMe: FC = () => {
 
           </motion.p>
           <motion.p
-            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-slate-500 mb-6"
+            className="max-w-3xl mx-auto text-sm md:text-md font-body leading-relaxed text-light mb-6"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}

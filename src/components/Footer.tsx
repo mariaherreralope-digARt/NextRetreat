@@ -30,7 +30,7 @@ const footerLinks: Record<string, { name: string; href: string }[]> = {
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-gradient-to-b from-transparent via-primary/30 to-secondary">
+    <footer className="bg-gradient-to-b from-transparent via-darker/30 to-darker/90">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-12">
           <div className="lg:col-span-4">
@@ -46,7 +46,7 @@ const Footer: FC = () => {
                 Luxury & Transformation
               </span>
             </div>
-            <p className="text-gray-600 mb-6 font-body md:w-3/4">
+            <p className="text-light mb-6 font-body md:w-3/4">
               Curated retreats that blend luxury and transformation. Inspiring
               journeys guided by world-class coaches, hosted in the world’s most
               extraordinary destinations.
@@ -54,13 +54,13 @@ const Footer: FC = () => {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-all duration-200"
+                className="w-10 h-10 bg-lighter rounded-full flex items-center justify-center text-btt hover:bg-light hover:text-dark transition-all duration-200"
               >
                 <FaFacebookF className="size-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-btt hover:text-white transition-all duration-200"
+                className="w-10 h-10 bg-light rounded-full flex items-center justify-center text-gray-600 hover:bg-btt hover:text-dark transition-all duration-200"
               >
                 <FaInstagram className="size-5" />
               </a>
@@ -76,7 +76,7 @@ const Footer: FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {Object.entries(footerLinks).map(([category, links]) => (
                 <div key={category}>
-                  <h3 className="text-lg mb-4 uppercase font-heading text-primary font-bold">
+                  <h3 className="text-lg mb-4 uppercase font-heading text-btt font-bold">
                     {category}
                   </h3>
                   <ul className="space-y-2">
@@ -84,7 +84,7 @@ const Footer: FC = () => {
                       <li key={index}>
                         <a
                           href={link.href}
-                          className="text-gray-600 font-body hover:text-gray-900"
+                          className="text-light font-body hover:text-lighter"
                         >
                           {link.name}
                         </a>
