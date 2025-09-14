@@ -2,12 +2,15 @@
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Cursos from "@/components/Cursos";
-import StrategyOverview from "@/components/StrategyOverview";
-import SocialMediaPlan from "@/components/SocialMediaPlan";
-import EngagementAnalytics from "@/components/EngagementAnalytics";
+import OurPhilosofy from "@/components/OurPhilosophy";
+import OptionsOne from "@/components/OptionsOne";
+import OptionsTwo from "@/components/OptionsTwo";
+import Collage from "@/components/Collage";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
+import OurPhilosophy from "@/components/OurPhilosophy";
+import WhyUs from "@/components/WhyUs";
 
 export default function HomePage() {
   return (
@@ -19,10 +22,12 @@ export default function HomePage() {
         <Hero />
         {/* <AboutMe /> */}
         {/* <Cursos /> */}
-        <StrategyOverview />
-        <EngagementAnalytics />
+        <OurPhilosophy />
+        <WhyUs />
 
-        <SocialMediaPlan />
+        <OptionsOne />
+        <OptionsTwo />
+        <Collage />
         <TestimonialsSection />
         <Newsletter />
         <Footer />

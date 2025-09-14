@@ -1,5 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +13,8 @@
 @import "tailwindcss";
 /* Optional custom styles */
 /* body {
-  font-family: 'Inter', sans-serif;
+  
+  font-family: 'Bodoni Moda', serif;
 } */
 
 @theme {
@@ -20,8 +26,10 @@
   --color-light: #d0c9c0;
   --color-lighter: #efead8;
 
-  --font-body: "Inter", "sans-serif";
-  --font-heading: "Satoshi", "sans-serif";
+    --font-body: "Bodoni Moda", "serif";
+  --font-heading: "Montserrat", "serif";
+  /* --font-body: "Inter", "sans-serif"; */
+  /* --font-heading: "Satoshi", "sans-serif"; */
   /* --font-subheading: "Playfair Display", "sans-serif"; */
 
   /* @layer base {

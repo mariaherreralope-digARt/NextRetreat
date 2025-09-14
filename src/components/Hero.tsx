@@ -53,9 +53,9 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className="text-2xl md:text-4xl font-extralight mb-6 px-12 text-lighter text-center max-w-3xl"
+          className="text-3xl md:text-4xl lg:text-5xl font-extralight  px-12 text-lighter/90 text-center uppercase max-w-3xl font-heading"
         >
-          Transformative Luxury Retreats
+          Luxury Retreats
         </motion.h1>
 
         {/* Subtitle */}
@@ -64,7 +64,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           viewport={{ once: false }}
-          className="text-md md:text-xl mb-10 px-12 text-center font-extralight text-light max-w-3xl"
+          className="text-md md:text-xl mb-10 px-12 text-center font-extralight font-body text-light max-w-3xl"
         >
           Exclusive retreats designed to restore balance, ignite growth, and create unforgettable moments in the world’s most inspiring destinations.
         </motion.p>

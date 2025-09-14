@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function EngagementAnalytics() {
+export default function WhyUs() {
   const items = [
     {
       title: "Transformative Journeys",
@@ -40,7 +40,7 @@ export default function EngagementAnalytics() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <motion.h2
-          className="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-center px-3"
+          className="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-4xl lg:text-5xl font-extralight font-heading text-center px-3"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -61,7 +61,7 @@ export default function EngagementAnalytics() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-serif italic text-xl mb-4 underline underline-offset-4 decoration-white">
+              <h3 className="font-heading  italic text-xl mb-4 underline underline-offset-4 decoration-white">
                 {item.title}
               </h3>
 
@@ -76,7 +76,7 @@ export default function EngagementAnalytics() {
                 />
               </div>
 
-              <p className="text-white text-base">{item.desc}</p>
+              <p className="text-white text-base font-body">{item.desc}</p>
             </motion.div>
           ))}
         </div>

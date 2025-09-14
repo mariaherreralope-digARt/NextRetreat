@@ -30,20 +30,20 @@ const footerLinks: Record<string, { name: string; href: string }[]> = {
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-gradient-to-b from-transparent via-darker/30 to-darker/90">
+    <footer className="bg-dark">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-12">
           <div className="lg:col-span-4">
             <div className="flex gap-2 items-center mb-4">
-              <Image
+              {/* <Image
                 src="/images/logo-footer.png"
                 alt="Logo Luxury Retreats"
                 width={48}
                 height={48}
                 className="h-12 rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300 object-contain"
-              />
-              <span className="text-xl font-heading font-bold text-btt">
-                Luxury & Transformation
+              /> */}
+              <span className="text-xl font-heading font-extralight uppercase text-lighter">
+                Boleh Luxury Retreats
               </span>
             </div>
             <p className="text-light mb-6 font-body md:w-3/4">
@@ -76,7 +76,7 @@ const Footer: FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {Object.entries(footerLinks).map(([category, links]) => (
                 <div key={category}>
-                  <h3 className="text-lg mb-4 uppercase font-heading text-btt font-bold">
+                  <h3 className="text-lg mb-4 uppercase font-heading text-lighter font-extralight">
                     {category}
                   </h3>
                   <ul className="space-y-2">
@@ -99,7 +99,7 @@ const Footer: FC = () => {
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-600 font-body text-sm">
-              © {new Date().getFullYear()} Luxury & Transformation. All rights
+              © {new Date().getFullYear()} Boleh Luxury Retreats. All rights
               reserved.
             </p>
             <p className="text-gray-600 text-sm">

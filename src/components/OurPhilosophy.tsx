@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function StrategyOverview() {
+export default function OurPhilosophy() {
   return (
-    <section className="w-full bg-lighter  pt-12  lg:pt-18">
+    <section className="w-full bg-light  pt-12  lg:pt-18">
       <div className="px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>
           <motion.h2
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-dark uppercase"
+            className="text-3xl md:text-4xl lg:text-5xl font-extralight font-heading leading-tight mb-6 text-dark uppercase"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

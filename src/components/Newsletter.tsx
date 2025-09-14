@@ -4,7 +4,7 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export default function Newsletter() {
   return (
-    <section className="mx-auto bg-gradient-to-b from-darker/90 via-dark/20 to-transparent px-4 sm:px-6 lg:px-8 py-5">
+    <section className="mx-auto bg-gradient-to-b from-darker/90 via-dark/20 to-transparent px-0 ">
       <div className="bg-gradient-to-r from-btt via-dark to-light overflow-hidden">
         <div className="relative md:px-16 py-16 px-6 md:py-15">
           <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
