@@ -13,11 +13,15 @@ import Footer from "@/components/Footer";
 import OurPhilosophy from "@/components/OurPhilosophy";
 import WhyUs from "@/components/WhyUs";
 import NewComponentTrial from "@/components/NewComponentTrial";
+import QASection from "@/components/QASection";
+import VerticalButton from "@/components/VerticalButton"; 
+import GoTopButton from "@/components/GoTopButton";
 
-const paragraph = "Your practice is not about touching your toes, it’s about what you discover on the way down.";
+const paragraph =
+  "Your practice is not about touching your toes, it’s about what you discover on the way down.";
 
 export default function HomePage() {
-  const words = paragraph.split(" ")
+  const words = paragraph.split(" ");
 
   return (
     <main className="relative min-h-screen overflow-x-hidden">
@@ -31,11 +35,15 @@ export default function HomePage() {
 
       <OptionsOne />
       <OptionsTwo />
+      <QASection />
+
       <Collage />
       <TestimonialsSection />
       <Newsletter />
       <Footer />
-    
+      <GoTopButton />
+
+      <VerticalButton label="Book Our Next Retreat" href="/about" position="right" />
     </main>
   );
 }
