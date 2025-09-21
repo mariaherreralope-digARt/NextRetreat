@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function OurPhilosophy() {
   return (
     <section className="w-full bg-light  pt-12  lg:pt-18">
-      <div className="px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className=" px-11 md:px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>
           <motion.h2
@@ -84,7 +84,7 @@ export default function OurPhilosophy() {
               className="absolute top-[8%] left-[9%] w-[82%] h-[77%] object-cover rounded-md"
             /> */}
              <div className="mt-6 grid sm:grid-cols-1 md:grid-cols-2 gap-4 font-body ">
-            <p className="italic text-darker md:w-1/2 md:w-auto text-md md:text-lg ">
+            <p className="italic text-darker md:w-1/2 text-md md:text-lg ">
               We combine luxury and transformation because we believe deep renewal deserves both comfort and inspiration.
             </p>
             <p className="text-darker text-md md:text-lg">

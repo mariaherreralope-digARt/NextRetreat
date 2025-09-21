@@ -19,7 +19,7 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
       : "bg-light text-btt";
 
   return (
-    <div className="flex-1 flex justify-end z-30">
+    <div className="flex-1 justify-end z-30 hidden md:flex">
       <motion.button
         onClick={openModal}
         initial={{ opacity: 0, scale: 0.8 }}

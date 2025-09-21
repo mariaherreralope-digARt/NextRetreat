@@ -17,7 +17,7 @@ const images = [
 
 export default function Collage() {
   return (
-    <section className="bg-light py-16 px-8">
+    <section className="bg-light py-16 px-10 md:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE - IMAGE GRID */}
         <motion.div

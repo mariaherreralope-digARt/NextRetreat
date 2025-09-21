@@ -29,7 +29,7 @@ const GoTopButton: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-4 right-6 p-3 rounded-full bg-transparent text-btt border-btt border  hover:bg-btt/30 transition-all duration-300"
+      className="fixed bottom-4 right-6 p-1 md:p-3 rounded-full bg-transparent text-btt border-btt border  hover:bg-btt/30 transition-all duration-300"
       aria-label="Back to top"
     >
       <BsChevronUp size={24} />

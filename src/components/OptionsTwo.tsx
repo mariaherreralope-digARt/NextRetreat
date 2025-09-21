@@ -9,7 +9,7 @@ export default function OptionsTwo() {
    
 
       {/* LEFT SIDE - Content list */}
-      <div className="bg-light flex flex-col justify-center p-8 md:p-12 lg:p-16 ">
+      <div className="bg-light flex flex-col justify-center p-10 md:p-12 lg:p-16 ">
         <div className="space-y-12">
           {/* ITEM 1 */}
           <motion.div

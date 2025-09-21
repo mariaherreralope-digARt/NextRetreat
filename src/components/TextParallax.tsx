@@ -2,26 +2,23 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-export default function NewComponentTrial({ paragraph }: { paragraph: string }) {
-  // console.log("Paragraph prop:", paragraph);
+export default function TextParallax({ paragraph1 }: { paragraph1: string }) {
   const container = useRef<HTMLParagraphElement | null>(null);
 
-  // observe container scroll progress
   const { scrollYProgress } = useScroll({
     target: container,
-    // animate across the container's scroll through the viewport
     offset: ['start 0.90', 'end 0.70'],
   });
 
-  const words = (paragraph ?? '').split(' ');
+  const words = (paragraph1 ?? '').split(' ');
 
   return (
     <div
-      className="flex flex-wrap items-start font-body md:h-[75vh] px-10 md:px-50 pt-12  pb-16 md:pb-0 max-w-[1280px] bg-dark text-slate-100 italic text-center "
+      className="flex flex-wrap items-start font-body md:h-[75vh] px-10 md:px-50 pt-12  pb-16 md:pb-0 max-w-[1280px] bg-light text-darker italic text-center bg-"
     >
       <p
         ref={container}
-        className="text-3xl md:text-[64px] leading-[1.25]"
+        className="text-3xl md:text-[64px]leading-[1.25]"
       >
         {words.map((w, i) => (
           <Word
@@ -37,20 +34,15 @@ export default function NewComponentTrial({ paragraph }: { paragraph: string }) 
   );
 }
 
-/**
- * Word component:
- * - renders the shadow (static, low opacity)
- * - renders the motion overlay word (absolute, opacity driven by scroll)
- */
+
 type WordProps = {
   word: string;
   index: number;
   total: number;
-  progress: any; // motion value
+  progress: any; 
 };
 
 const Word = ({ word, index, total, progress }: WordProps) => {
-  // range for this word's reveal (0..1 based on word position)
   const start = index / total;
   const end = start + 1 / total;
 

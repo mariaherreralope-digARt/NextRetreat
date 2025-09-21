@@ -31,7 +31,7 @@ const footerLinks: Record<string, { name: string; href: string }[]> = {
 const Footer: FC = () => {
   return (
     <footer className="bg-dark">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+      <div className="mx-auto px-10 md:px-6 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-12">
           <div className="lg:col-span-4">
             <div className="flex gap-2 items-center mb-4">

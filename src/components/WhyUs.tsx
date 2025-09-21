@@ -51,7 +51,7 @@ export default function WhyUs() {
       </div>
 
       {/* CONTENT GRID */}
-      <div className="bg-darker px-6 py-16 lg:px-20 lg:py-24">
+      <div className="bg-dark px-11 md:px-6 py-16 lg:px-20 lg:py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
           {items.map((item, i) => (
             <motion.div

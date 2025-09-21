@@ -20,7 +20,7 @@ const Cursos = () => {
   const MotionImage = motion(Image);
 
   return (
-    <section id="cursos" className="max-w-7xl mx-auto px-14 py-16 bg-cover bg-center relative opacity-90">
+    <section id="cursos" className="max-w-7xl mx-auto px-16 md:px-14 py-16 bg-cover bg-center relative opacity-90">
       <div className="text-center mb-16
        drop-shadow-md">
         <h2 className="text-2xl text-lighter md:text-3xl font-heading">The Retreat Collection</h2>

@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import NavLinks from "./NavLinks";
 import SocialIcons from "../SocialIcons";
+import ContactButton from "./ContactButton";
+
 
 type NavLink = {
   href: string;
@@ -59,6 +61,12 @@ const MobileMenu = ({
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
           <SocialIcons />
         </div>
+       <div className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2 md:hidden">
+  <ContactButton isMenuOpen={isMenuOpen} scrolled={false} />
+   
+   {/* test contact */}
+</div>
+
       </motion.div>
     )}
   </AnimatePresence>

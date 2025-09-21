@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-export default function NewComponentTrial({ paragraph }: { paragraph: string }) {
+export default function TextParallaxQA({ paragraph2 }: { paragraph2: string }) {
   // console.log("Paragraph prop:", paragraph);
   const container = useRef<HTMLParagraphElement | null>(null);
 
@@ -13,11 +13,11 @@ export default function NewComponentTrial({ paragraph }: { paragraph: string }) 
     offset: ['start 0.90', 'end 0.70'],
   });
 
-  const words = (paragraph ?? '').split(' ');
+  const words = (paragraph2 ?? '').split(' ');
 
   return (
     <div
-      className="flex flex-wrap items-start font-body md:h-[75vh] px-10 md:px-50 pt-12  pb-16 md:pb-0 max-w-[1280px] bg-dark text-slate-100 italic text-center "
+      className="flex flex-wrap items-start font-body md:h-[75vh] px-10 md:px-50 pt-12  pb-16 md:pb-0 max-w-[1280px] bg-darker text-slate-100 italic text-center bg-"
     >
       <p
         ref={container}

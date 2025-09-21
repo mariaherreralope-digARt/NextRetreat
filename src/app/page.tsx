@@ -16,10 +16,20 @@ import NewComponentTrial from "@/components/NewComponentTrial";
 import QASection from "@/components/QASection";
 import VerticalButton from "@/components/VerticalButton"; 
 import GoTopButton from "@/components/GoTopButton";
+import TextParallax from "@/components/TextParallax";
+import TextParallaxQA from "@/components/TextParallaxQA";
 
 const paragraph =
-  "Your practice is not about touching your toes, it’s about what you discover on the way down.";
+  "Your journey deserves guidance you can trust, an environment that feels safe, and a space designed with intention.";
 
+  const paragraph1 =
+  "Every journey is unique — that’s why we offer retreats designed to nurture mind, body, and spirit in different ways.";
+
+  const paragraph2 =
+  "We know you may have questions — here are clear answers to help you feel confident before beginning your journey with us.";
+   
+
+ 
 export default function HomePage() {
   const words = paragraph.split(" ");
 
@@ -30,11 +40,14 @@ export default function HomePage() {
 
       <Hero />
       <OurPhilosophy />
-      <WhyUs />
       <NewComponentTrial paragraph={paragraph} />
+      <WhyUs />
+
+      <TextParallax paragraph1={paragraph1} />
 
       <OptionsOne />
       <OptionsTwo />
+      <TextParallaxQA paragraph2={paragraph2} />
       <QASection />
 
       <Collage />
@@ -43,7 +56,7 @@ export default function HomePage() {
       <Footer />
       <GoTopButton />
 
-      <VerticalButton label="Book Our Next Retreat" href="/about" position="right" />
+      <VerticalButton label="Book Our Next Retreat" href="/about" />
     </main>
   );
 }

@@ -89,10 +89,10 @@ const TestimonialsSection: FC = () => {
         </Swiper>
 
         {/* Navigation buttons */}
-        <div className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
+        <div className="custom-prev absolute -left-5 md:left-0 top-1/2 -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
           <BsChevronLeft className="text-xl" />
         </div>
-        <div className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
+        <div className="custom-next absolute -right-5 md:right-0 top-1/2 -translate-y-1/2 bg-btt text-white p-3 rounded-full cursor-pointer hover:bg-light shadow-md z-10">
           <BsChevronRight className="text-xl" />
         </div>
       </div>
