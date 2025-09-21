@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function OptionsOne() {
   return (
-    <section className="w-full grid grid-cols-1 lg:grid-cols-2">
+    <section id="retreats" className="w-full grid grid-cols-1 lg:grid-cols-2">
       {/* LEFT SIDE - Background image with overlay text */}
       <div className="relative h-[500px] lg:h-auto">
         <Image

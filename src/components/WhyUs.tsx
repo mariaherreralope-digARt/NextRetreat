@@ -28,7 +28,7 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="w-full">
+    <section id="whyChooseUs" className="w-full">
       
       {/* HEADER with background image */}
       <div className="relative h-[300px] md:h-[400px]">

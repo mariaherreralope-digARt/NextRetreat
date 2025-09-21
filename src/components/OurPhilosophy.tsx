@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function OurPhilosophy() {
   return (
-    <section className="w-full bg-light  pt-12  lg:pt-18">
+    <section id="ourPhilosophy" className="w-full bg-light  pt-12  lg:pt-18">
       <div className=" px-11 md:px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>

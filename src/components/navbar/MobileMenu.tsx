@@ -61,11 +61,20 @@ const MobileMenu = ({
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
           <SocialIcons />
         </div>
-       <div className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2 md:hidden">
-  <ContactButton isMenuOpen={isMenuOpen} scrolled={false} />
-   
-   {/* test contact */}
-</div>
+       <div className="absolute pt-5 left-1/2 z-10 -translate-x-1/2 md:hidden">
+  <button
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    // openContactForm();
+                  }}
+                  className="w-full text-lighter  p-3 font-extralight uppercase  bg-btt transition-all hover:bg-lighter hover:text-btt "
+                >
+                  Contactanos
+                </button>
+                 {/* <span
+          className={`relative z-10 transition-colors duration-300 font-extralight ${ */}
+  
+                </div>
 
       </motion.div>
     )}

@@ -33,12 +33,12 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-   
-    { href: "#quiensoy", label: "Pamper Deluxe" },
-    { href: "#cursos", label: "Destinations" },
-    { href: "#retiros", label: "Practitioners" },
-    { href: "#coaching", label: "About Us" },
-    { href: "#testimonios", label: "Testimonials" },
+    { href: "#ourPhilosophy", label: "Our Philosophy" },
+    { href: "#whyChooseUs", label: "Why Choose Us" },
+    { href: "#retreats", label: "Retreats" },
+    { href: "#qaSection", label: "Q&A" },
+    { href: "#explore", label: "Explore Our Choices" },
+    { href: "#testimonials", label: "Testimonials" },
   ];
 
   return (

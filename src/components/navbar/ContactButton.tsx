@@ -5,10 +5,11 @@ import { useModal } from "../../context/ModalContext";
 
 type ContactButtonProps = {
   isMenuOpen: boolean;
-  scrolled: boolean;   // new prop
+  scrolled: boolean;
+  variant?: "desktop" | "mobile"; // ✅ new optional prop
 };
 
-const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
+const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactButtonProps) => {
   const { openModal } = useModal();
 
   // base button style (border + text)
@@ -19,7 +20,11 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
       : "bg-light text-btt";
 
   return (
-    <div className="flex-1 justify-end z-30 hidden md:flex">
+    <div
+      className={`z-30 ${
+        variant === "desktop" ? "flex-1 justify-end hidden md:flex" : "block md:hidden"
+      }`}
+    >
       <motion.button
         onClick={openModal}
         initial={{ opacity: 0, scale: 0.8 }}
@@ -31,9 +36,7 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
         {/* background animation layer */}
         <motion.span
           className={`absolute inset-0 ${
-            isMenuOpen
-              ? "bg-light"
-              : "bg-btt"
+            isMenuOpen ? "bg-light" : "bg-btt"
           }`}
           initial={isMenuOpen ? { x: "100%" } : { x: "-100%" }}
           variants={{
@@ -46,12 +49,12 @@ const ContactButton = ({ isMenuOpen, scrolled }: ContactButtonProps) => {
 
         {/* button text */}
         <span
-          className={`relative z-10 transition-colors duration-300 text-bold ${
+          className={`relative z-10 transition-colors duration-300 font-extralight ${
             isMenuOpen
-              ? "text-bold group-hover:text-btt"
+              ? "group-hover:text-btt"
               : scrolled
                 ? "text-btt group-hover:text-light"
-                : "text-darker text-bold group-hover:text-light"
+                : "text-darker group-hover:text-light"
           }`}
         >
           Contact

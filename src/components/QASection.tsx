@@ -55,7 +55,7 @@ export default function QASection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="relative px-10 md:px-30 pb-10 z-0 bg-[url('/images/bkgMenu.png')] bg-cover bg-center max-w-l mx-auto">
+    <div id="qaSection" className="relative px-10 md:px-30 pb-10 z-0 bg-[url('/images/bkgMenu.png')] bg-cover bg-center max-w-l mx-auto">
       <div className="absolute inset-0 bg-black/70 z-1"></div>
       <div className="relative z-10 max-w-full md:max-w-2/3 mx-auto">
 

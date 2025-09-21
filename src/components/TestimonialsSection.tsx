@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
 const TestimonialsSection: FC = () => {
   return (
     <section
-      id="testimonios"
+      id="testimonials"
       className="relative py-16 px-14 inset-0 z-0 bg-[url('/images/testimonialsBkg.png')] bg-cover bg-center max-w-7xl mx-auto"
     >
       {/* Overlay */}
