@@ -23,7 +23,7 @@ export default function Newsletter() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
               <input
                 type="email"
-                placeholder="Tu dirección de correo"
+                placeholder="Your Email Address"
                 className="w-full bg-white text-darker sm:w-auto md:w-80 px-4 sm:px-6 py-3 sm:py-4 focus:outline-none"
               />
               <button className="w-full sm:w-auto cursor-pointer bg-btt text-white px-6 hover:border hover:border-btt hover:bg-white hover:text-btt ]sm:px-8 py-3 sm:py-4 flex items-center gap-2 font-body">

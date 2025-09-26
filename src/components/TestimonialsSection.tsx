@@ -75,6 +75,7 @@ const TestimonialsSection: FC = () => {
           navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
           modules={[Navigation]}
           className="testimonial-swiper"
+          speed={1200}
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>

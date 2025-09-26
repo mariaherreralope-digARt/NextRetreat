@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavLinks from "./NavLinks";
 import SocialIcons from "../SocialIcons";
 import ContactButton from "./ContactButton";
+import { useModal } from "../../context/ModalContext";
+
 
 
 type NavLink = {
@@ -30,7 +32,9 @@ const MobileMenu = ({
   activeLink,
   setActiveLink,
   navLinks,
-}: MobileMenuProps) => (
+}: MobileMenuProps) => {
+  const { openModal } = useModal();
+  return (
   <AnimatePresence>
     {isMenuOpen && (
       <motion.div
@@ -65,20 +69,18 @@ const MobileMenu = ({
   <button
                   onClick={() => {
                     setIsMenuOpen(false);
-                    // openContactForm();
+                    openModal();
                   }}
                   className="w-full text-lighter  p-3 font-extralight uppercase  bg-btt transition-all hover:bg-lighter hover:text-btt "
                 >
-                  Contactanos
+                  Contact
                 </button>
-                 {/* <span
-          className={`relative z-10 transition-colors duration-300 font-extralight ${ */}
-  
+
                 </div>
 
       </motion.div>
     )}
   </AnimatePresence>
 );
-
+};
 export default MobileMenu;

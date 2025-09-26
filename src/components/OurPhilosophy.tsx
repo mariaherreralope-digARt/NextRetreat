@@ -84,7 +84,7 @@ export default function OurPhilosophy() {
               className="absolute top-[8%] left-[9%] w-[82%] h-[77%] object-cover rounded-md"
             /> */}
              <div className="mt-6 grid sm:grid-cols-1 md:grid-cols-2 gap-4 font-body ">
-            <p className="italic text-darker md:w-1/2 text-md md:text-lg ">
+            <p className="italic text-darker  text-md md:text-lg ">
               We combine luxury and transformation because we believe deep renewal deserves both comfort and inspiration.
             </p>
             <p className="text-darker text-md md:text-lg">

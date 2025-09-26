@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { Volume2, VolumeX, Play, Pause } from "lucide-react";
 
 export default function Hero() {
-  const videoRef = useRef(null);
+  // ✅ Correctly typed ref for HTMLVideoElement
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
 

@@ -18,6 +18,7 @@ import VerticalButton from "@/components/VerticalButton";
 import GoTopButton from "@/components/GoTopButton";
 import TextParallax from "@/components/TextParallax";
 import TextParallaxQA from "@/components/TextParallaxQA";
+import Lenis from 'lenis';
 
 const paragraph =
   "Your journey deserves guidance you can trust, an environment that feels safe, and a space designed with intention.";
@@ -32,6 +33,15 @@ const paragraph =
  
 export default function HomePage() {
   const words = paragraph.split(" ");
+
+  useEffect(() => {
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+
+    });
 
   return (
     <main className="relative min-h-screen overflow-x-hidden">

@@ -32,7 +32,7 @@ const GlobalModal = () => {
           >
             <div className="flex justify-between items-center mb-4">
               <h1 className="text-xl font-heading text-dark dark:text-light">
-                Contacta con Nosotros
+                Contact with us
               </h1>
               <button onClick={closeModal} aria-label="Close contact form">
                 <FiX className="w-6 h-6 text-gray-00 dark:text-light" />
@@ -50,7 +50,7 @@ const GlobalModal = () => {
               <input
                 type="hidden"
                 name="_autoresponse"
-                value="Gracias por tu mensaje. Nos pondremos en contacto pronto."
+                value="Thank you for reaching out! We will get back to you as soon as possible."
               />
 
               <div>
@@ -58,12 +58,12 @@ const GlobalModal = () => {
                   htmlFor="name"
                   className="block text-sm font-body font-medium text-darker dark:text-gray-100 mb-1"
                 >
-                  Nombre
+                  Name
                 </label>
                 <input
                   type="text"
                   id="name"
-                  placeholder="Tu Nombre"
+                  placeholder="Your Name"
                   className="w-full px-4 py-2 border border-dark rounded-lg focus:ring-secondary focus:border-darker bg-light dark:bg-slate-700 text-slate-800 dark:text-gray-100"
                 />
               </div>
@@ -72,12 +72,12 @@ const GlobalModal = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1"
                 >
-                  Correo Electrónico
+                  Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  placeholder="Tu Correo Electrónico"
+                  placeholder="Your Email"
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-secondary focus:border-secondary bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                 />
               </div>
@@ -86,17 +86,17 @@ const GlobalModal = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1"
                 >
-                  Mensaje
+                  Message
                 </label>
                 <textarea
                   rows={4}
                   id="message"
-                  placeholder="¿Cómo podemos ayudarte?"
+                  placeholder="How can we help you?"
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-secondary focus:border-secondary bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                 />
               </div>
               <motion.button className="w-full px-4 py-2 text-white bg-gradient-to-r from-btt to-primary hover:from-primary hover:to-btt transition-all duration-300 font-body">
-                Enviar Mensaje
+                Send Message
               </motion.button>
             </form>
           </motion.div>
