@@ -13,11 +13,7 @@
 @tailwind utilities;
 
 @import "tailwindcss";
-/* Optional custom styles */
-/* body {
-  
-  font-family: 'Bodoni Moda', serif;
-} */
+
 
 @theme {
 
@@ -28,8 +24,8 @@
   --color-light: #d0c9c0;
   --color-lighter: #efead8;
 
-  --font-heading: "Montserrat", "serif";
-  --font-body: "Lora", "serif"; 
+  /* --font-heading: "Montserrat", "serif";
+  --font-body: "Lora", "serif";  */
 
   /* --font-heading: "Playfair Display", "serif";
   --font-body: "Source Sans 3", "sans-serif"; */
@@ -37,70 +33,15 @@
   /* --font-heading: "Poppins", "sans-serif";
   --font-body: "Lora", "serif"; */
 
-  /* --font-heading: "Cormorant Garamond", "serif";
-  --font-body: "Nunito Sans", "sans-serif"; */
+  --font-heading: "Cormorant Garamond", "serif";
+  --font-body: "Nunito Sans", "sans-serif";
 
   /* --font-heading: "Raleway", "sans-serif";
   --font-body: "Open Sans", "sans-serif"; */
 
 
-  /* --font-body: "Inter", "sans-serif"; */
-  /* --font-heading: "Satoshi", "sans-serif"; */
-  /* --font-subheading: "Playfair Display", "sans-serif"; */
 
-  /* @layer base {
-    body {
-      background-color: var(--color-background);
-      color: var(--color-secondary);
-      font-family: var(--font-body);
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-heading);
-      color: var(--color-primary);
-    }
-    a {
-      color: var(--color-primary);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .font-body {
-      font-family: var(--font-body);
-    }
-    .font-heading {
-      font-family: var(--font-heading);
-    }
-    .font-subheading {
-      font-family: var(--font-subheading);
-    }
-    .text-primary {
-      color: var(--color-primary);
-    }
-    .text-secondary {
-      color: var(--color-secondary);
-    }
-    .text-accent {
-      color: var(--color-accent);
-    }
-    .text-btt {
-      color: var(--color-btt);
-    }
-    .bg-primary {
-      background-color: var(--color-primary);
-    }
-    .bg-secondary {
-      background-color: var(--color-secondary);
-    }
-    .bg-accent {
-      background-color: var(--color-accent);
-    }
-    .bg-btt {
-      background-color: var(--color-btt);
-      @apply text-black hover:text-white;
-    }
-    
-  } */
+
 
   /* @layer components {
     .btn {
