@@ -19,7 +19,7 @@ export default function OptionsTwo() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="flex-1 order-1 md:order-2">
+            <div className="flex-1">
               <h3 className="bg-dark px-4 py-2 inline-block font-heading italic text-lg mb-2">
                 Mindful Awakening
               </h3>
