@@ -17,8 +17,9 @@ export default function TextParallaxQA({ paragraph2 }: { paragraph2: string }) {
 
   return (
     <div
-      className="flex flex-wrap items-start font-body md:h-[75vh] max-w-[1280px]
-      px-10 md:px-50 pt-12 pb-16 md:pb-10  bg-darker text-slate-100 italic text-center bg-"
+      className="flex flex-wrap items-center justify-center font-body 
+      md:h-[100vh] max-w-[1280px] px-10 md:px-50 
+       bg-darker text-slate-100 italic text-center "
     >
       <p
         ref={container}
